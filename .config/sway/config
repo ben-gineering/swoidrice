@@ -48,10 +48,10 @@ bar {
 # Preferences
 floating_modifier $mod normal
 titlebar_border_thickness 2
-titlebar_border_inactive_color #444444
-titlebar_border_focused_color #666666
-titlebar_border_focused_inactive_color #444444
-titlebar_border_urgent_color #ff0000
+# titlebar_border_inactive_color #444444
+# titlebar_border_focused_color #666666
+# titlebar_border_focused_inactive_color #444444
+# titlebar_border_urgent_color #ff0000
 
 # Resize mode
 mode "resize" {
@@ -73,7 +73,7 @@ mode "resize" {
 # Keybindings - based on dwm
 bindsym $mod+Return exec $terminal
 bindsym $mod+d exec $launcher
-bindsym $mod+j exec $terminal -e lf
+# bindsym $mod+j exec $terminal -e lf
 bindsym $mod+w exec $browser
 bindsym $mod+m exec mpc toggle
 
@@ -134,10 +134,10 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+r mode "resize"
 
 # Split in horizontal orientation
-bindsym $mod+Shift+h split h
+# bindsym $mod+Shift+h split h
 
 # Split in vertical orientation
-bindsym $mod+Shift+v split v
+# bindsym $mod+Shift+v split v
 
 # Toggle fullscreen
 bindsym $mod+f fullscreen toggle
