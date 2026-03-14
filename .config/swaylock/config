@@ -1,0 +1,40 @@
+# Swaylock configuration
+
+# Colors - simple dark theme
+--color=282828
+--bs-hl-color=ebdbb2
+--key-hl-color=98971a
+--separator-color=00000000
+--inside-color=00000000
+--inside-clear-color=00000000
+--inside-wrong-color=00000000
+--inside-ver-color=00000000
+--line-color=00000000
+--line-clear-color=00000000
+--line-wrong-color=00000000
+--line-ver-color=00000000
+--ring-color=ebdbb2
+--ring-clear-color=ebdbb2
+--ring-wrong-color=ebdbb2
+--ring-ver-color=ebdbb2
+--text-color=ebdbb2
+--text-clear-color=ebdbb2
+--text-wrong-color=ebdbb2
+--text-ver-color=ebdbb2
+
+# Layout
+--indicator
+--clock
+--date-str="%A, %B %d"
+--time-str="%H:%M:%S"
+--date-format="%A, %B %d"
+--time-format="%H:%M:%S"
+
+# Font
+--font="JetBrains Mono"
+--line-width=3
+--ring-width=3
+--radius=10
+
+# Scaling
+--scale=1
