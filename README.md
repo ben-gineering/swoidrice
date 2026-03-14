@@ -12,20 +12,19 @@ These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
 	- nsxiv (image/gif viewer)
 	- mpv (video player)
 	- other stuff like xdg default programs, inputrc and more, etc.
-- I try to minimize what's directly in `~` so:
-	- All configs that can be in `~/.config/` are.
-	- Some environmental variables have been set in `~/.zprofile` to move configs into `~/.config/`
+- All configs that can be in `~/.config/` are.
 - Bookmarks in text files used by various scripts (like `~/.local/bin/shortcuts`)
 	- File bookmarks in `~/.config/shell/bm-files`
 	- Directory bookmarks in `~/.config/shell/bm-dirs`
 
 ## Usage
 
-These dotfiles are intended to go with numerous suckless programs I use:
+These dotfiles are designed for Wayland/Sway and work with:
 
-- [dwm](https://github.com/lukesmithxyz/dwm) (window manager)
-- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
-- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
+- [sway](https://github.com/swaywm/sway) (window manager)
+- [waybar](https://github.com/Alexays/Waybar) (status bar)
+- [foot](https://codeberg.org/dnkl/foot) (terminal emulator)
+- [rofi](https://github.com/davatorium/rofi) (application launcher)
 
 I also recommend trying out
 [mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
