@@ -83,17 +83,17 @@ row {
     cursor: pointer;
 }
 
-row:selected {
-    background-color: @bg-col2;
-}
-
-row:active {
-    background-color: @fg-col2;
-}
-
-row:urgent {
-    background-color: @urg-col;
-}
+// row:selected {
+//     background-color: @bg-col2;
+// }
+// 
+// row:active {
+//     background-color: @fg-col2;
+// }
+// 
+// row:urgent {
+//     background-color: @urg-col;
+// }
 
 /* Icon */
 iconview {
