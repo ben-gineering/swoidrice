@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # Use Wayland-native terminal (foot)
-set $terminal foot
+set $terminal alacritty
 set $browser firefox
 set $filemanager lf
 set $launcher rofi -show drun -show-icons
@@ -46,10 +46,6 @@ bar {
 # Preferences
 floating_modifier $mod normal
 titlebar_border_thickness 2
-# titlebar_border_inactive_color #444444
-# titlebar_border_focused_color #666666
-# titlebar_border_focused_inactive_color #444444
-# titlebar_border_urgent_color #ff0000
 
 # Resize mode
 mode "resize" {
@@ -71,7 +67,6 @@ mode "resize" {
 # Keybindings - based on dwm
 bindsym $mod+Return exec $terminal
 bindsym $mod+d exec $launcher
-# bindsym $mod+j exec $terminal -e lf
 bindsym $mod+w exec $browser
 bindsym $mod+m exec mpc toggle
 
