@@ -21,7 +21,7 @@ configuration {
     display-drun: "Apps";
     display-run: "Run";
     display-window: "Window";
-    sidebar-mode: true;
+
     terminal: "foot";
 }
 
