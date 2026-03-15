@@ -40,8 +40,6 @@ input "elantech:*" {
 
 # Status bar
 bar {
-    position top
-    mode dock
     status_command waybar
 }
 
