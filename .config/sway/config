@@ -76,7 +76,7 @@ bindsym $mod+w exec $browser
 bindsym $mod+m exec mpc toggle
 
 # Kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod++q kill
 
 # Reload sway config
 bindsym $mod+Shift+c reload
