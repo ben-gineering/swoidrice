@@ -161,7 +161,7 @@ bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
 bindsym XF86AudioMute exec pulsemixer --mute
 
 # Application specific rules
-for_window [app_id="firefox"] move scratchpad
+# for_window [app_id="firefox"] move scratchpad
 for_window [title="Oracle VM VirtualBox Manager"] move position center
 for_window [app_id="pavucontrol"] floating enable
 
