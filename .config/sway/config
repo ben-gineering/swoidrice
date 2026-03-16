@@ -38,14 +38,9 @@ input "elantech:*" {
     natural_scroll enabled
 }
 
-# Status bar
-bar {
-    status_command waybar
-}
-
 # Preferences
 floating_modifier $mod normal
-titlebar_border_thickness 2
+titlebar_border_thickness 0
 
 # Resize mode
 mode "resize" {
@@ -172,3 +167,4 @@ for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 # Startup applications
 exec wpaperd
+exec waybar -c /home/bn/.config/waybar/config.jsonc
