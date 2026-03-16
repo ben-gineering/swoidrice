@@ -79,6 +79,9 @@ bindsym $mod+Shift+c reload
 # Exit sway (logout)
 bindsym $mod+Shift+e exit
 
+# Switch to last used workspace
+bindsym $mod+Tab exec ~/.config/sway/last_workspace.sh
+
 # Change to workspace numbers
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -164,6 +167,8 @@ bindsym XF86AudioMute exec pulsemixer --mute
 # for_window [app_id="firefox"] move scratchpad
 for_window [title="Oracle VM VirtualBox Manager"] move position center
 for_window [app_id="pavucontrol"] floating enable
+
+for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 # Startup applications
 exec wpaperd
