@@ -9,7 +9,10 @@ set $browser firefox
 set $filemanager lf
 set $launcher rofi -show drun -show-icons
 
-# Output configuration
+# Output configuration - Multi-monitor setup (from Hyprland config)
+output DP-7 mode 1920x1080@59.94Hz pos 0 0 scale 1
+output DP-6 mode 1920x1080@59.94Hz pos 1920 0 scale 1
+output eDP-1 pos 320 1080 scale 1
 output * bg #282828 solid_color
 
 # Font for window titles
