@@ -1,5 +1,6 @@
 # Ignore everything by default
 /*
+
 !/.gitignore
 !/README.md
 !/LICENSE
@@ -21,10 +22,10 @@
 !.config/mpd/
 !.config/ncmpcpp/
 !.config/mpv/
-!.config/tridactyl/
 !.config/zathura/
 !.config/nsxiv/
 !.config/wpaperd/
+!.config/tridactyl/
 
 # Track .local directories
 !.local/
@@ -32,7 +33,6 @@
 !.local/share/applications/
 
 # Ignore everything else in tracked directories
-.config/*
 !.config/shell/*
 !.config/sway/*
 !.config/swayidle/*
@@ -50,70 +50,56 @@
 !.config/zathura/*
 !.config/nsxiv/*
 !.config/wpaperd/*
+!.config/tridactyl/*
 
-.local/*
 !.local/bin/*
 !.local/share/applications/*
 
 # Ignore nested files in tracked directories
-.config/shell/*
 !.config/shell/aliasrc
 !.config/shell/bm-dirs
 !.config/shell/bm-files
 !.config/shell/inputrc
 !.config/shell/profile
 
-.config/sway/*
 !.config/sway/config
 
-.config/swayidle/*
 !.config/swayidle/config
 
-.config/swaylock/*
 !.config/swaylock/config
 
-.config/waybar/*
 !.config/waybar/config.jsonc
 !.config/waybar/power_menu.xml
 !.config/waybar/mediaplayer.py
 
-.config/foot/*
 !.config/foot/foot.ini
 
-.config/rofi/*
 !.config/rofi/config.rasi
 
-.config/nvim/*
 !.config/nvim/init.vim
 
-.config/zsh/*
 !.config/zsh/.zshrc
 
-.config/lf/*
 !.config/lf/lfrc
 !.config/lf/scope
 !.config/lf/cleaner
 
-.config/dunst/*
 !.config/dunst/dunstrc
 
-.config/mpd/*
 !.config/mpd/mpd.conf
 
-.config/ncmpcpp/*
 !.config/ncmpcpp/config
 !.config/ncmpcpp/bindings
 
-.config/mpv/*
 !.config/mpv/mpv.conf
 !.config/mpv/input.conf
 !.config/mpv/scripts/
 
-.config/zathura/*
 !.config/zathura/zathurarc
 
-.config/nsxiv/*
 !.config/nsxiv/exec/
+
+!.config/tridactyl/tridactylrc
 
 .local/bin/*
 !.local/bin/shortcuts
