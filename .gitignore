@@ -2,37 +2,15 @@
 /*
 
 !/.gitignore
+!/.gitmodules
 !/README.md
 !/LICENSE
-!/.gitmodules
-
-# Track .config directories
-!.config/
-!.config/shell/
-!.config/sway/
-!.config/swayidle/
-!.config/swaylock/
-!.config/waybar/
-!.config/foot/
-!.config/rofi/
-!.config/nvim/
-!.config/zsh/
-!.config/lf/
-!.config/dunst/
-!.config/mpd/
-!.config/ncmpcpp/
-!.config/mpv/
-!.config/zathura/
-!.config/nsxiv/
-!.config/wpaperd/
-!.config/tridactyl/
 
 # Track .local directories
-!.local/
-!.local/bin/
-!.local/share/applications/
+!.local/bin/*
+!.local/share/applications/*
 
-# Ignore everything else in tracked directories
+# Track config folder with their content
 !.config/shell/*
 !.config/sway/*
 !.config/swayidle/*
@@ -51,62 +29,3 @@
 !.config/nsxiv/*
 !.config/wpaperd/*
 !.config/tridactyl/*
-
-!.local/bin/*
-!.local/share/applications/*
-
-# Ignore nested files in tracked directories
-!.config/shell/aliasrc
-!.config/shell/bm-dirs
-!.config/shell/bm-files
-!.config/shell/inputrc
-!.config/shell/profile
-
-!.config/sway/config
-
-!.config/swayidle/config
-
-!.config/swaylock/config
-
-!.config/waybar/config.jsonc
-!.config/waybar/power_menu.xml
-!.config/waybar/mediaplayer.py
-
-!.config/foot/foot.ini
-
-!.config/rofi/config.rasi
-
-!.config/nvim/init.vim
-
-!.config/zsh/.zshrc
-
-!.config/lf/lfrc
-!.config/lf/scope
-!.config/lf/cleaner
-
-!.config/dunst/dunstrc
-
-!.config/mpd/mpd.conf
-
-!.config/ncmpcpp/config
-!.config/ncmpcpp/bindings
-
-!.config/mpv/mpv.conf
-!.config/mpv/input.conf
-!.config/mpv/scripts/
-
-!.config/zathura/zathurarc
-
-!.config/nsxiv/exec/
-
-!.config/tridactyl/tridactylrc
-
-.local/bin/*
-!.local/bin/shortcuts
-!.local/bin/compiler
-!.local/bin/setbg
-!.local/bin/dmenuhandler
-!.local/bin/rotdir
-!.local/bin/unix
-!.local/bin/statusbar/
-!.local/bin/cron/
