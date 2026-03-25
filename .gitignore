@@ -21,6 +21,7 @@
 !.config/mpd/
 !.config/ncmpcpp/
 !.config/mpv/
+!.config/tridactyl/
 !.config/zathura/
 !.config/nsxiv/
 !.config/wpaperd/
