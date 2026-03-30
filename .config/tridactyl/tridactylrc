@@ -56,6 +56,10 @@ bind U undo window
 bind r reload
 bind R reloadhard
 bind x stop
+bind / fillcmdline find
+bind ? fillcmdline find --reverse
+bind n findnext --search-from-view
+bind N findnext --search-from-view --reverse
 bind gi focusinput
 bind g? rot13
 bind g! jumble
