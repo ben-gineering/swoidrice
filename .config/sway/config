@@ -10,9 +10,9 @@ set $filemanager lf
 set $launcher rofi -show drun -show-icons
 
 # Output configuration - Multi-monitor setup (from Hyprland config)
-output DP-7 mode 1920x1080@59.94Hz pos 0 0 scale 1
-output DP-6 mode 1920x1080@59.94Hz pos 1920 0 scale 1
-output eDP-1 pos 320 1080 scale 1
+output DP-6 mode 2560x1440@59.94Hz pos 0 0 scale 1
+output DP-5 mode 2560x1440@59.94Hz pos 2560 0 scale 1
+output eDP-1 pos 320 1440 scale 1
 output * bg #282828 solid_color
 
 # Font for window titles
@@ -38,6 +38,7 @@ input "type:touchpad" {
 # Preferences
 floating_modifier $mod normal
 titlebar_border_thickness 0
+default_border pixel
 
 # Resize mode
 mode "resize" {
@@ -63,7 +64,7 @@ bindsym $mod+w exec $browser
 bindsym $mod+m exec mpc toggle
 
 # Kill focused window
-bindsym $mod++q kill
+bindsym $mod+q kill
 
 # Reload sway config
 bindsym $mod+Shift+c reload
@@ -72,7 +73,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exit
 
 # Switch to last used workspace
-bindsym $mod+Tab exec ~/.config/sway/last_workspace.sh
+bindsym $mod+Tab workspace back_and_forth
 
 # Change to workspace numbers
 bindsym $mod+1 workspace number 1
@@ -133,7 +134,7 @@ bindsym $mod+f fullscreen toggle
 # Layouts
 bindsym $mod+b layout tabbed
 bindsym $mod+Shift+b layout stacking
-bindsym $mod+Shift+n layout normal
+bindsym $mod+Shift+n layout default
 
 # Toggle scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -151,9 +152,9 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
-bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
-bindsym XF86AudioMute exec pulsemixer --mute
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 # Application specific rules
 # for_window [app_id="firefox"] move scratchpad
