@@ -166,3 +166,6 @@ for_window [shell="xwayland"] title_format "[XWayland] %title"
 # Startup applications
 exec wpaperd
 exec waybar -c /home/bn/.config/waybar/config.jsonc
+
+# fix xdg-desktop-portals
+exec systemctl --user import-environment WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP
